@@ -80,8 +80,8 @@ def calculate_dice(preds, targets, num_classes):
 if __name__=='__main__':
     """
     """
-    train_ds = SyntheticSegDataset('../data', 'train')
-    val_ds = SyntheticSegDataset('../data', 'val')
+    train_ds = SyntheticSegDataset('./data', 'train')
+    val_ds = SyntheticSegDataset('./data', 'val')
 
     train_loader = DataLoader(train_ds, batch_size=4, shuffle=True, num_workers=0)
     val_loader = DataLoader(val_ds, batch_size=2, shuffle=False, num_workers=0)
